@@ -1,4 +1,3 @@
-from re import I
 import pyautogui
 import time
 import os
