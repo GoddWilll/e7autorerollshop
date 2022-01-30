@@ -1,18 +1,30 @@
 import pyautogui
 import time
 import os
+import keyboard
+
+exitProgram = False 
+
+def quit():
+    global exitProgram
+    exitProgram = True
 
 
+    
 def main():
+    
+    # creating the hotkey
+    keyboard.add_hotkey('q', lambda: quit())
     
     # initialized refresh counter variable
     refreshCounter = 0
+    itemsCounter = 0
     
     # calibrating the autoclicker
     calibration()
     
     # loop
-    while(True):
+    while not exitProgram:
         
         # initialized pyautogui
         pyautogui.FAILSAFE = True
@@ -20,7 +32,7 @@ def main():
         pyautogui.screenshot("VERIFY.png")
 
         # geting the position for the bm
-        price_check(0)
+        itemsCounter += price_check(0)
         
         # getting the position + refreshing
         refreshCounter = refresh_click(refreshCounter)        
@@ -29,12 +41,25 @@ def main():
         confirm_click()
         
         # print how many times we refreshed the shop
-        print(f"We refreshed {refreshCounter} times.")
+        # print(f"We refreshed {refreshCounter} times.")
+        
+    print(f"""
+          -------------------------------------------
+                        STATISTICS
+          -------------------------------------------
+          Number or refreshes : {refreshCounter}
+          -------------------------------------------
+          Number of bought items : {itemsCounter}
+          """)
     
     
 def initialize():
-    print("AUTOMATIC REROLL SHOP V0.1 by Godwill#9999\n\n")
-    print("----------------------------------------------\n")
+    print("""
+          AUTOMATIC REROLL SHOP v0.1 by Godwill#9999\n
+          -------------------------------------------
+          Use the hotkey 'a' to quit the loop. \n
+          -------------------------------------------
+          """)
     print("Starting the script ", end="")
     for i in range(0, 3):
         print(". ", end="")
@@ -110,14 +135,14 @@ def price_check(num):
     time.sleep(0.5)
     location = exists('5bm.png')
     location2 = exists('50bm.png')
-    print(location2)
     if location == False and location2 == False:
         if num == 0:
             move_page()
             time.sleep(0.5)
             price_check(1)
+            return 0
         else :
-            return
+            return 0
     else:
         script_dir = os.path.dirname(__file__)
         if location != False:  
@@ -131,6 +156,9 @@ def price_check(num):
             buy_item()
             if bought() == False:
                 buy_item()
+                return 1
+            else : 
+                return 1
                 
         if location2 != False:
             script_dir = os.path.dirname(__file__)
@@ -144,6 +172,9 @@ def price_check(num):
             buy_item()
             if bought() == False:
                 buy_item()
+                return 1
+            else :
+                return 1
     
         
        
