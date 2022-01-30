@@ -22,7 +22,9 @@ pip install pyautogui
 ```
 pip install keyboard
 ```
-
+```
+git clone https://github.com/GoddWilll/e7autorerollshop.git
+```
 
 # Demonstration
 ![Alt Text](https://i.ibb.co/x28gVbp/ezgif-7-d60ef77a9b.gif)
