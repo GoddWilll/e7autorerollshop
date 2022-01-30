@@ -1,6 +1,7 @@
 # e7autorerollshop
 A script made in order to automatically reroll the secret shop.
 It is still in development.
+This script uses the ``pyautogui`` library to recognize the items in the shop. Sadly, this method is kinda slow, but this script is not made to be fast. The objective is to allow the user to spend his time differently than staying in front of the shop and rolling manually.
 
 # Requirements
 - python3
