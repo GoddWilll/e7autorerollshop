@@ -34,4 +34,4 @@ cd e7autorerollshop
 python3 main.py
 ```
 # Demonstration
-![Alt Text](https://i.ibb.co/tD1v5Vj/2022-01-30-02-12-57.gif)
+![Alt Text](https://i.ibb.co/2ScT4Zp/2022-01-30-02-12-57-2.gif)
