@@ -44,21 +44,21 @@ def main():
         # print(f"We refreshed {refreshCounter} times.")
         
     print(f"""
-          -------------------------------------------
-                        STATISTICS
-          -------------------------------------------
-          Number or refreshes : {refreshCounter}
-          -------------------------------------------
-          Number of bought items : {itemsCounter}
+        ----------------------------------------
+                    STATISTICS
+        ----------------------------------------
+        Number or refreshes : {refreshCounter}
+        ----------------------------------------
+        Number of bought items : {itemsCounter}
           """)
     
     
 def initialize():
     print("""
-          AUTOMATIC REROLL SHOP v0.1 by Godwill#9999\n
-          -------------------------------------------
-          Use the hotkey 'a' to quit the loop. \n
-          -------------------------------------------
+        AUTOMATIC REROLL SHOP v0.1 by Godwill#9999
+        ----------------------------------------
+        Use the hotkey 'a' to quit the loop. 
+        ----------------------------------------
           """)
     print("Starting the script ", end="")
     for i in range(0, 3):
