@@ -9,7 +9,7 @@ It is still in development.
 - pyautogui
 - keyboard
 
-# How to install
+# How to install it
 ```
 pip install Pillow
 ```
@@ -26,5 +26,12 @@ pip install keyboard
 git clone https://github.com/GoddWilll/e7autorerollshop.git
 ```
 
+# How to run it
+```
+cd e7autorerollshop
+```
+```
+python3 main.py
+```
 # Demonstration
 ![Alt Text](https://i.ibb.co/x28gVbp/ezgif-7-d60ef77a9b.gif)
