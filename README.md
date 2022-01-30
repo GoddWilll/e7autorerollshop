@@ -1,3 +1,6 @@
+# Demonstration
+![Alt Text](https://i.ibb.co/YdHcfHj/azeda.gif)
+
 # e7autorerollshop
 A script made in order to automatically reroll the secret shop.
 It is still in development.
@@ -34,5 +37,4 @@ cd e7autorerollshop
 ```
 python3 main.py
 ```
-# Demonstration
-![Alt Text](https://i.ibb.co/YdHcfHj/azeda.gif)
+
