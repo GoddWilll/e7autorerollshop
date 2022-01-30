@@ -12,11 +12,14 @@ It is still in development.
 # How to install
 ```
 pip install Pillow
-
+```
+```
 pip install opencv-python
-
+```
+```
 pip install pyautogui
-
+```
+```
 pip install keyboard
 ```
 
